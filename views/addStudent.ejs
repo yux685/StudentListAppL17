@@ -44,7 +44,7 @@
 
           <div class="card-body">
 
-            <form action="/addStudent" method="POST">
+            <form action="/addStudent" method="POST"enctype="multipart/form-data">
 
               <div class="mb-3">
                 <label for="name" class="form-label">
@@ -75,13 +75,14 @@
                   Image URL
                 </label>
 
-                <input type="text" class="form-control" id="image" name="image" placeholder="Enter image URL" required>
+                <!-- <input type="text" class="form-control" id="image" name="image" placeholder="Enter image URL" required> -->
+                <input type="file" class="form-control" id="image" name="image" accept="image/*">
               </div>
 
               <div class="d-grid gap-2">
 
                 <button type="submit" class="btn btn-success">
-                  Add Product
+                  Add Student
                 </button>
 
                 <a href="/" class="btn btn-secondary">

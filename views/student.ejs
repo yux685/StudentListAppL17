@@ -51,7 +51,7 @@ const formattedDate =
                 <p><b>Student Name:</b><br> <%= student.name %></p>
                 <p><b>Date of Birth:</b><br> <%= formattedDate %></p>
                 <p><b>Contact:</b><br> <%= student.contact %></p>
-                <p><b>Image:</b><br> <img src = "<%= student.image %>" width="40%"></p>
+                <p><b>Image:</b><br> <img src = "/images/<%= student.image %>" width="20%"></p>
             </div>
         <% } else { %>
             <p>No student found.</p>
